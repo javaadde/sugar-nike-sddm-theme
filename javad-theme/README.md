@@ -1,104 +1,104 @@
-# Javad Theme for SDDM
+<div align="center">
 
-An ultra-minimal, modern, premium dark login screen theme for SDDM.
+# Sugar-Nike
+
+### Ultra-Minimal SDDM Login Theme
+
+![Version](https://img.shields.io/badge/version-1.0-blue?style=for-the-badge&color=7FD4C1)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge&color=A8E6CF)
+![SDDM](https://img.shields.io/badge/SDDM-Theme-orange?style=for-the-badge&color=252D38)
+
+<br/>
 
 ![Preview](preview.png)
 
-## Features
+</div>
 
-- **Ultra-minimal design** - Clean, distraction-free login experience
-- **Dark mode only** - Easy on the eyes with near-black charcoal background
-- **Subtle vignette effect** - Edges darker than center for depth
-- **Centered layout** - Perfectly balanced horizontal & vertical alignment
-- **Circular avatar** - Flat illustration style with light cyan background
-- **Username display** - Clearly shows the current user below the avatar
-- **Pill-shaped password input** - Large, semi-transparent with soft glow
-- **Smooth animations** - Subtle fade-in and focus effects
-- **Monospace typography** - Clean JetBrains Mono / Fira Code style
-- **Branding logo** - Minimalist logo in bottom-right corner
+<br/>
 
-## Installation
+## ✨ Features
 
-### Automated Installation (Recommended)
+- 🎨 **Sugar-Nike Design** — A premium, distraction-free aesthetic with a focused layout.
+- 🌑 **True Dark Mode** — Easy on the eyes with a specially curated charcoal palette.
+- 🎭 **Vignette Depth** — Subtle edge darkening for a cinematic feel.
+- 📐 **Perfect Centering** — Harmonious horizontal and vertical alignment.
+- 👤 **Circular Avatar** — Modern flat style with username display.
+- 💊 **Pill-Shaped Input** — Elegant, semi-transparent entry field with soft glow.
+- 🌊 **Smooth Animations** — Fluid fade-ins and focus transitions.
+- ⌨️ **Monospace Typography** — Clean, readable text using JetBrains/Fira styling.
 
-1. Run the included install script from the root directory:
+---
+
+## 🚀 Installation
+
+### 1️⃣ Automated Install (Recommended)
+
+Run the included magic script to set everything up instantly:
 
 ```bash
 sudo ./install.sh
 ```
 
-### Manual Installation
+### 2️⃣ Manual Setup
 
-1. Copy the `javad-theme` folder to your SDDM themes directory:
+If you prefer doing it yourself:
 
-```bash
-sudo cp -r javad-theme /usr/share/sddm/themes/
-```
+1.  **Copy the files**
 
-2. Edit your SDDM configuration to use the theme:
+    ```bash
+    sudo cp -r javad-theme /usr/share/sddm/themes/
+    ```
 
-```bash
-sudo nano /etc/sddm.conf
-```
+2.  **Activate the theme**
+    Edit `/etc/sddm.conf` and set the theme:
 
-Add or modify the `[Theme]` section:
+    ```ini
+    [Theme]
+    Current=javad-theme
+    ```
 
-```ini
-[Theme]
-Current=javad-theme
-```
+3.  **Restart & Enjoy**
+    ```bash
+    sudo systemctl restart sddm
+    ```
 
-3. Restart SDDM or reboot:
+<br/>
 
-```bash
-sudo systemctl restart sddm
-```
+## 🛠 Customization
 
-### Testing (without restarting)
+Make it yours by editing `theme.conf`.
 
-You can preview the theme without restarting:
+| Configuration         | Description               |  Default  |
+| :-------------------- | :------------------------ | :-------: |
+| 🎨 `background`       | Main background color     | `#252D38` |
+| ✨ `accentColor`      | Accent/branding color     | `#7FD4C1` |
+| 🖼 `avatarBackground` | Avatar circle background  | `#A8E6CF` |
+| ⌨️ `inputBackground`  | Password input background | `#3A4352` |
+| 📏 `avatarSize`       | Avatar diameter (px)      |   `100`   |
+| ↔️ `inputWidth`       | Input field width         |   `320`   |
+| ↕️ `inputHeight`      | Input field height        |   `52`    |
+| ⏱ `fadeInDuration`    | Animation speed (ms)      |   `800`   |
 
-```bash
-sddm-greeter --test-mode --theme /usr/share/sddm/themes/javad-theme
-```
+<br/>
 
-## Customization
+## ⌨️ Shortcuts
 
-Edit `theme.conf` to customize colors and dimensions:
+|    Key    | Action             |
+| :-------: | :----------------- |
+| **Enter** | 🔓 Submit Password |
+|  **Esc**  | ❌ Clear Field     |
+|  **F1**   | 🔄 Toggle Sessions |
 
-| Setting            | Description               | Default   |
-| ------------------ | ------------------------- | --------- |
-| `background`       | Main background color     | `#252D38` |
-| `accentColor`      | Accent/branding color     | `#7FD4C1` |
-| `avatarBackground` | Avatar circle background  | `#A8E6CF` |
-| `inputBackground`  | Password input background | `#3A4352` |
-| `avatarSize`       | Avatar diameter in pixels | `100`     |
-| `inputWidth`       | Password input width      | `320`     |
-| `inputHeight`      | Password input height     | `52`      |
-| `fadeInDuration`   | Fade-in animation (ms)    | `800`     |
+<br/>
 
-## Keyboard Shortcuts
+## 🧩 Requirements
 
-| Key      | Action                  |
-| -------- | ----------------------- |
-| `Enter`  | Submit password         |
-| `Escape` | Clear password field    |
-| `F1`     | Toggle session selector |
+- **SDDM** (Simple Desktop Display Manager)
+- **Qt 5.15+** (QtQuick 2.15)
+- **QtGraphicalEffects 1.12**
 
-## Custom Avatar
+<br/>
 
-Replace `face.icon` with your own image (PNG recommended, ideally ~100x100px).
-
-## Requirements
-
-- SDDM (Simple Desktop Display Manager)
-- Qt 5.15+ with QtQuick 2.15
-- QtGraphicalEffects 1.12
-
-## License
-
-MIT License - Feel free to modify and distribute.
-
-## Author
-
-Created by Javad
+<div align="center">
+  <sub>Created with ❤️ by Javad</sub>
+</div>
