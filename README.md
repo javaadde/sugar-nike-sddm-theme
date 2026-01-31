@@ -10,7 +10,7 @@
 
 <br/>
 
-![Preview](preview.png)
+![Preview](/javad-theme/preview.png)
 
 </div>
 
