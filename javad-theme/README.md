@@ -11,12 +11,21 @@ An ultra-minimal, modern, premium dark login screen theme for SDDM.
 - **Subtle vignette effect** - Edges darker than center for depth
 - **Centered layout** - Perfectly balanced horizontal & vertical alignment
 - **Circular avatar** - Flat illustration style with light cyan background
+- **Username display** - Clearly shows the current user below the avatar
 - **Pill-shaped password input** - Large, semi-transparent with soft glow
 - **Smooth animations** - Subtle fade-in and focus effects
 - **Monospace typography** - Clean JetBrains Mono / Fira Code style
-- **Cyan accent branding** - Minimalist logo in bottom-right corner
+- **Branding logo** - Minimalist logo in bottom-right corner
 
 ## Installation
+
+### Automated Installation (Recommended)
+
+1. Run the included install script from the root directory:
+
+```bash
+sudo ./install.sh
+```
 
 ### Manual Installation
 
