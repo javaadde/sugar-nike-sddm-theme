@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=Javad Theme
+Description=Ultra-minimal, modern, premium dark SDDM login theme
+Author=Javad
+Copyright=© 2026 Javad
+License=MIT
+Type=sddm-theme
+Version=1.0
+Website=
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=
